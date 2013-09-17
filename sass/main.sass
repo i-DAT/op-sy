@@ -1,0 +1,46 @@
+/**
+ * Compass Imports
+ */
+
+@import "compass/css3/box-sizing"
+@import "compass/css3/border-radius"
+@import "compass/typography/text/replacement"
+@import "compass/utilities/general/clearfix"
+
+/**
+ * Bower Component Imports
+ */
+
+@import "normalize"
+
+/**
+ * Imports
+ */
+
+@import "mixins"
+
+/**
+ * Variables
+ */
+
+$black: rgb(40, 40, 40)
+
+/**
+ * Basic Layout & Typography
+ * Author: @saulhardman
+ */
+
+html
+    font-size: 62.5%
+
+body,
+button,
+input,
+select,
+textarea
+    font-family: "Lato", arial, verdana, sans-serif
+    @include font-size(13)
+    color: $black
+
++text-highlight
+    background: rgb(0, 255, 200)

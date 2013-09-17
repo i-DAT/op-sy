@@ -1,0 +1,21 @@
+@mixin font-size($value)
+    font-size: $value * 1px
+    font-size: ($value / 10) * 1rem
+
+@mixin line-height($value)
+    line-height: $value * 1px
+    line-height: ($value / 10) * 1rem
+
+@mixin letter-spacing($value)
+    letter-spacing: $value * 1px
+    letter-spacing: ($value / 10) * 1rem
+
+@mixin word-spacing($value)
+    word-spacing: $value * 1px
+    word-spacing: ($value / 10) * 1rem
+
+@mixin text-highlight
+    ::-moz-selection
+        @content
+    ::selection
+        @content

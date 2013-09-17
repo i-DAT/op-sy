@@ -1,0 +1,32 @@
+{
+  "name": "op-sy",
+  "version": "0.0.1",
+  "description": "Op-sy WordPress theme.",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saulhardman/op-sy"
+  },
+  "contributors": [
+    {
+      "name": "Saul Hardman",
+      "email": "hello@iamsaul.co.uk"
+    }
+  ],
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "engines": {
+    "node": "~0.10.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-strip": "~0.2.1",
+    "grunt-modernizr": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-requirejs": "~0.4.1"
+  }
+}
