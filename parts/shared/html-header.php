@@ -11,6 +11,8 @@
 		<title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/main.css">
 		<?php if (WP_DEBUG): ?>
 		<script src="<?php echo get_template_directory_uri(); ?>/components/modernizr/modernizr.js"></script>
 		<?php else: ?>

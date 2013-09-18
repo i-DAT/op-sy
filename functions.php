@@ -63,11 +63,7 @@
 	 */
 
 	function starkers_script_enqueuer() {
-		wp_register_style( 'main', get_template_directory_uri().'/css/main.css', '', '', 'main' );
-        wp_enqueue_style( 'main' );
-
-        wp_register_style( 'fonts', 'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic', '', '', 'fonts' );
-        wp_enqueue_style( 'fonts' );
+        
 	}	
 
 	/* ========================================================================================================================
