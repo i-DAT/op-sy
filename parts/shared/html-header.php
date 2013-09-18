@@ -12,9 +12,9 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
 		<?php if (WP_DEBUG): ?>
-		<script src="<?php get_template_directory_uri(); ?>/components/modernizr/modernizr.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/components/modernizr/modernizr.js"></script>
 		<?php else: ?>
-		<script src="<?php get_template_directory_uri(); ?>/js/vendors/modernizr.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/vendors/modernizr.min.js"></script>
 		<?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
