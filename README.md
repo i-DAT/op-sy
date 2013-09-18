@@ -2,20 +2,20 @@
 
 ## Summary
 
-WordPress Theme for the [iDAT](http://i-dat.org) [Op-sy](http://op-sy.com) project, based on the [Starkers](https://github.com/viewportindustries/starkers) theme.
+WordPress Theme for the [iDAT](http://i-dat.org) [op-sy](http://op-sy.com) project, based on [Starkers](https://github.com/viewportindustries/starkers).
 
 ## Local Development
 
 ### Install WordPress
 
-Either via [GitHub](https://github.com/WordPress/WordPress) or [manually](http://wordpress.org/download/).
+Either via [GitHub](https://github.com/WordPress/WordPress) (remember to checkout stable branch) or [manually](http://wordpress.org/download/).
 
 ### Install Theme
 
 1. `cd wp-content/themes/`
 2. `git clone git@github.com:saulhardman/op-sy.git`
 
-### Install Dependencies
+### Install NPM and Bower Dependencies
 
 1. `cd op-sy`
 2. `npm install`
