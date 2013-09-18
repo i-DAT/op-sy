@@ -20,13 +20,27 @@ Either via [GitHub](https://github.com/WordPress/WordPress) or [manually](http:/
 1. `cd op-sy`
 2. `npm install`
 
+### Grunt Commands
+
+#### `grunt watch` (default)
+
+The default grunt command is watch - it compiles SASS files on change.
+
+#### `grunt build`
+
+1. Compiles SASS.
+2. Lints JavaScript files using [JSHint](http://www.jshint.com/).
+3. Runs [RequireJS optimizer](http://requirejs.org/docs/optimization.html) including [almond](https://github.com/jrburke/almond) in the output.
+4. Strips console logs from built JavaScript file.
+5. Scans JavaScript and CSS files for [Modernizr](http://modernizr.com/) methods and classes and generates a custom Modernizr file accordingly.
+
 ## Core Dependencies
 
-[Node.js](http://nodejs.org)
-[Yo](http://yeoman.io)
-[Ruby](https://www.ruby-lang.org/en/)
-[Compass](http://compass-style.org)
+- [Node.js](http://nodejs.org)
+- [Yo](http://yeoman.io)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Compass](http://compass-style.org)
 
 ## Authors
 
-[Saul](http://github.com/saulhardman)
+- [Saul](http://github.com/saulhardman)

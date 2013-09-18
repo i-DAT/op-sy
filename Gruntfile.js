@@ -54,6 +54,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-modernizr');
 
-    grunt.registerTask('build', ['compass', 'requirejs', 'strip', 'modernizr']);
+    grunt.registerTask('build', ['compass', 'jshint', 'requirejs', 'strip', 'modernizr']);
 
 };
