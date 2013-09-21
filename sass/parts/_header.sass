@@ -11,7 +11,7 @@
         text-indent: -9999px
         height: 125px
         width: 125px
-        background: url("../img/opsy_logo.png") no-repeat // TODO: Retinafy
+        @include retinafy("opsy_logo", "png", 125px, 125px)
 
 .site-nav
     @include font-size(16)
