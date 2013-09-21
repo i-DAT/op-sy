@@ -18,6 +18,7 @@
  */
 
 @import "mixins"
+@import "grid"
 
 /**
  * Variables
@@ -44,3 +45,7 @@ textarea
 
 +text-highlight
     background: rgb(0, 255, 200)
+
+main
+    display: block //Just in case...
+    @include container

@@ -1,6 +1,7 @@
 # Dependencies
 
 require "sass"
+require "susy"
 
 # Config
 
