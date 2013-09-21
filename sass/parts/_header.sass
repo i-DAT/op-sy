@@ -1,2 +1,28 @@
 .site-header
-    @include container
+    text-align: center
+    border-bottom: 1px solid #F1F1F1
+
+    .header-inner
+        padding: 45px 0
+        @include container
+
+    h1
+        display: inline-block
+        text-indent: -9999px
+        height: 125px
+        width: 125px
+        background: url("../img/opsy_logo.png") no-repeat // TODO: Retinafy
+
+.site-nav
+    @include font-size(16)
+
+    ul li
+        display: inline-block
+        margin: 0 20px 0 0
+        padding: 0 0 2px 0
+        &:last-of-type
+            margin: 0
+
+// Highlight current page in nav
+.current_page_item
+    border-bottom: 2px solid $black
