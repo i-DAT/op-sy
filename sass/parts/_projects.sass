@@ -1,0 +1,22 @@
+.projects-list
+    @include span-columns(12 omega, 12)
+
+    .project
+        border-bottom: 1px solid $light-grey
+        padding: 30px 0
+        @include span-columns(12 omega, 12)
+        &:first-of-type
+            padding-top: 0
+        &:last-of-type
+            border-bottom: none
+
+        .project-header
+
+            h3
+                @include font-size(18)
+            img
+                border-radius: 2px
+
+        .description
+            p
+                @include font-size(18)

@@ -19,3 +19,7 @@
                 width: 75px
                 float: right
                 @include retinafy("idat_logo", "png", 75px, 36px)
+                @include transition(all .125s ease-in-out)
+                &:hover
+                    opacity: .8
+                    @include transition(all .125s ease-in-out)
