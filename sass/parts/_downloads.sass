@@ -1,0 +1,45 @@
+.downloads-list
+    @include span-columns(12 omega, 12)
+
+.downloads-section
+    border-bottom: 1px solid $light-grey
+    padding: 30px 0
+    @include span-columns(12 omega, 12)
+    &:first-of-type
+        padding-top: 0
+    &:last-of-type
+        border-bottom: none
+
+.download
+    margin: 0 0 30px 0
+    padding: 20px 20px 20px 160px
+    border: 1px solid $black
+    border-radius: 4px
+    background-repeat: no-repeat
+    background-position: 20px center
+    @include span-columns(6, 12)
+    &:nth-of-type(2n+2)
+        @include span-columns(6 omega, 12)
+    &.github
+        @include retinafy("octocat", "png", 114px, 100px)
+
+    .title, .author
+        margin: 0
+
+    .title
+        @include font-size(18)
+
+    .author
+        font-weight: normal
+        @include font-size(16)
+        &:before
+            content: "by "
+            font-style: italic
+            color: lighten($black, 20%)
+
+    .links
+        margin: 20px 0 0 0
+        padding: 0
+
+        li
+            list-style-type: none

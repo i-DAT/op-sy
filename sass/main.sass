@@ -19,6 +19,7 @@
 
 @import "mixins"
 @import "grid"
+@import "animate"
 
 /**
  * Variables
@@ -62,6 +63,18 @@ a
     &:active
         color: $black
 
+blockquote
+    position: relative
+    margin: 1.5em 0
+    padding: 0
+    font-weight: 800
+    &:before
+        content: "“"
+        position: absolute
+        left: -15px
+    &:after
+        content: " ”"
+
 /**
  * Global styles
  */
@@ -75,7 +88,42 @@ main
 @import "parts/footer"
 
 /**
- * OS styles
+ * Homepage styles
  */
 
+.about
+    padding: 45px 0
+    border-bottom: 1px solid $light-grey
+    @include span-columns(12 omega, 12)
+
+    .intro
+        @include font-size(18)
+        @include span-columns(8, 12)
+
+    .quote
+        @include font-size(18)
+        @include span-columns(4 omega, 12)
+
+        blockquote
+            margin-bottom: 10px
+
+        .author
+            float: right
+            color: lighten($black, 20%)
+            &:before
+                content: " — "
+
 @import "parts/os"
+
+@import "parts/downloads"
+
+
+
+
+
+
+
+
+
+
+

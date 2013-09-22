@@ -20,6 +20,7 @@
     ::selection
         @content
 
+// Serve @2x images to retina displays
 @mixin retinafy($file, $type, $width, $height)
     $root: "../img/"
     background-image: url($root + $file + '.' + $type)
@@ -27,3 +28,29 @@
         &
             background-image: url($root + $file + '@2x.' + $type)  
             -webkit-background-size: $width $height
+
+
+// Prefix experimental props w/ browser prefixes
+@mixin prefixer ($property, $value, $prefixes)
+    @each $prefix in $prefixes
+        @if $prefix == webkit
+            -webkit-#{$property}: $value
+        @else if $prefix == moz
+            -moz-#{$property}: $value
+        @else if $prefix == ms
+            -ms-#{$property}: $value
+        @else if $prefix == o
+            -o-#{$property}: $value
+        @else if $prefix == spec
+            #{$property}: $value
+        @else
+            @warn "Unrecognized prefix: #{$prefix}"
+
+
+// Cross-browser CSS transitions
+@mixin transition ($properties...)
+    @if length($properties) >= 1
+        @include prefixer(transition, $properties, webkit moz ms o spec)
+    @else
+        $properties: all 0.15s ease-out 0
+        @include prefixer(transition, $properties, webkit moz ms o spec)

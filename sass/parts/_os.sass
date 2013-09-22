@@ -1,21 +1,38 @@
 // Homepage features
 .os-gallery
+    margin: 20px 0 45px 0
     text-align: center
+    @include span-columns(12 omega, 12)
 
     .os
+        position: relative
         display: inline-block
+        margin: 0 44px
+        &:first-of-type
+            margin-left: 0
+        &:last-of-type
+            margin-right: 0
+
+        // Show tooltip on icon hover
+        &:hover h3
+            visibility: visible
+            @extend .animated
+            @extend .fadeInUp
 
         h3
-            width: 100px
-            height: 40px
-            margin: 0 0 10px 0
+            visibility: hidden
+            width: 125px
             padding: 10px
-            background: white
-            border: 1px solid $black
+            color: white
+            background: $black
+            border-radius: 2px
+            // TODO: Add arrow / tip
 
         .icon
-            height: 100px
-            width: 100px
+            display: inline-block
+            height: 125px
+            width: 125px
             background: $black
+            border-radius: 2px
 
 // Single OS page
