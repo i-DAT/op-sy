@@ -25,11 +25,17 @@
  */
 
 $black: rgb(40, 40, 40)
+$light-grey: rgb(241, 241, 241)
 
 /**
  * Basic Layout & Typography
  * Author: @saulhardman
  */
+
+*
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
+    @include box-sizing(border-box)
 
 html
     font-size: 62.5%
@@ -62,7 +68,14 @@ a
 
 main
     display: block //Just in case...
+    padding: 0 0 45px 0
     @include container
 
 @import "parts/header"
 @import "parts/footer"
+
+/**
+ * OS styles
+ */
+
+@import "parts/os"
