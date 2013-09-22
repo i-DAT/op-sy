@@ -4,3 +4,18 @@
     .footer-inner
         padding: 45px 0
         @include container
+
+        .legal
+            @include span-columns(4, 12)
+            @include post(6)
+
+        .brand
+            @include span-columns(2 omega, 12)
+
+            .logo
+                display: inline-block
+                text-indent: -9999px
+                height: 36px
+                width: 75px
+                float: right
+                @include retinafy("idat_logo", "png", 75px, 36px)

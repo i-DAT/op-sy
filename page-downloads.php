@@ -13,8 +13,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">ActionScript 2 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 2 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -25,8 +25,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">ActionScript 3 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 3 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -37,8 +37,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">Quartz Composer Arch-OS Parser</h3>
-                    <h4 class="author">Aqeel Akbar</h4>
+                    <h4 class="title">Quartz Composer Arch-OS Parser</h3>
+                    <h5 class="author">Aqeel Akbar</h4>
                 </header>
 
                 <ul class="links">
@@ -49,8 +49,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">PHP Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">PHP Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -61,8 +61,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">Processing Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">Processing Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -73,8 +73,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">VVVV</h3>
-                    <h4 class="author">Darrel Fox</h4>
+                    <h4 class="title">VVVV</h3>
+                    <h5 class="author">Darrel Fox</h4>
                 </header>
 
                 <ul class="links">
@@ -85,8 +85,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">Blender Arch-OS Reader</h3>
-                    <h4 class="author">Pete Carss</h4>
+                    <h4 class="title">Blender Arch-OS Reader</h3>
+                    <h5 class="author">Pete Carss</h4>
                 </header>
 
                 <ul class="links">
@@ -103,8 +103,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">ActionScript 2 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 2 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -115,8 +115,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">ActionScript 3 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 3 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -127,8 +127,8 @@
 
             <div class="download github">
                 <header>
-                    <h3 class="title">Quartz Composer Arch-OS Parser</h3>
-                    <h4 class="author">Aqeel Akbar</h4>
+                    <h4 class="title">Quartz Composer Arch-OS Parser</h3>
+                    <h5 class="author">Aqeel Akbar</h4>
                 </header>
 
                 <ul class="links">
@@ -145,8 +145,8 @@
 
             <div class="download">
                 <header>
-                    <h3 class="title">ActionScript 2 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 2 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -157,8 +157,8 @@
 
             <div class="download">
                 <header>
-                    <h3 class="title">ActionScript 3 Arch-OS Parser</h3>
-                    <h4 class="author">Chris Saunders</h4>
+                    <h4 class="title">ActionScript 3 Arch-OS Parser</h3>
+                    <h5 class="author">Chris Saunders</h4>
                 </header>
 
                 <ul class="links">
@@ -169,8 +169,8 @@
 
             <div class="download">
                 <header>
-                    <h3 class="title">Quartz Composer Arch-OS Parser</h3>
-                    <h4 class="author">Aqeel Akbar</h4>
+                    <h4 class="title">Quartz Composer Arch-OS Parser</h3>
+                    <h5 class="author">Aqeel Akbar</h4>
                 </header>
 
                 <ul class="links">
