@@ -16,8 +16,8 @@
         transition: all .25s ease-in-out
         @include retinafy("opsy_logo", "png", 125px, 125px)
         &:hover
-            -webkit-transform: scale(1.1)
-            transition: all .25s ease-in-out // TODO: Mixin this shit (inc. prefixer)
+            @include prefixer(transform, scale(1.1), moz webkit o spec)
+            @include transition(all .25s ease-in-out)
 
 .site-nav
     @include font-size(16)
@@ -31,7 +31,7 @@
 
 // Highlight current page in nav
 .current_page_item
-    border-bottom: 2px solid $black
+    border-bottom: 2px solid $highlight
 
 // Single page header
 .page-header

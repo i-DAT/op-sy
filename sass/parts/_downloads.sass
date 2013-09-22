@@ -17,9 +17,15 @@
     border-radius: 4px
     background-repeat: no-repeat
     background-position: 20px center
+    @include transition(all .25s ease-in-out)
     @include span-columns(6, 12)
     &:nth-of-type(2n+2)
         @include span-columns(6 omega, 12)
+    &:hover
+        background-color: darken(white, 3%)
+        @include transition(all .25s ease-in-out)
+
+    // Add an octocat to GitHub links
     &.github
         @include retinafy("octocat", "png", 114px, 100px)
 
@@ -42,4 +48,5 @@
         padding: 0
 
         li
+            margin: 0 0 5px 0
             list-style-type: none

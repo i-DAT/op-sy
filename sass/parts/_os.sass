@@ -1,4 +1,5 @@
 // Homepage features
+
 .os-gallery
     margin: 20px 0 45px 0
     text-align: center
@@ -34,5 +35,14 @@
             width: 125px
             background: $black
             border-radius: 2px
+
+// OS Icons
+
+$os-list: eco arch bio dome s
+
+@each $os in $os-list
+    .os.#{$os}-os .icon
+        @include retinafy("os_#{$os}", "png", 125px, 125px)
+
 
 // Single OS page
