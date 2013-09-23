@@ -7,6 +7,12 @@
     
     <section class="downloads-list">
 
+        <section class="downloads-section about">
+            <h3>About</h3>
+            
+            <p>Symmetrical accusamus fanny pack pickled selfies reprehenderit, master cleanse fugiat enim before they sold out sint semiotics. Flannel pug Etsy, put a bird on it scenester deserunt Schlitz wolf leggings brunch bicycle rights fanny pack eiusmod laboris beard. Gentrify Shoreditch Tumblr sriracha adipisicing. Do fixie Portland Helvetica, irure laboris literally leggings nesciunt mixtape Terry Richardson.</p>
+        </section>
+
         <section class="downloads-section readers">
 
             <h3>Readers</h3>

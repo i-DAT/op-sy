@@ -5,8 +5,6 @@
         <h2><?php the_title(); ?></h2>
     </header>
     
-    <?php echo get_bloginfo('name'); ?>
-
     Custom <?php the_title(); ?> template here, yo!
 </main>
 

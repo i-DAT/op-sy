@@ -40,8 +40,17 @@
     @include font-size(22)
 
 // OS page header backgrounds
-$os: eco arch bio dome s
+// $os-list: eco arch bio dome s
 
-@each $os in $os-list
-    header.#{$os}-os
-        background:
+// @each $os in $os-list
+//     header.#{$os}-os
+//         background: #F1F1F1
+
+// TODO: Set real background images here
+header.eco-os
+    background: #F1F1F1
+    
+header.arch-os
+header.bio-os
+header.dome-os
+header.s-os
