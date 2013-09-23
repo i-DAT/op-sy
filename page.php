@@ -37,27 +37,27 @@
 
         <div class="os eco-os">
             <h3>Eco-OS</h3>
-            <a href="#" class="icon"></a>
+            <a href="http://eco-os.<?php echo str_replace('http://', '', site_url())?>" class="icon"></a>
         </div>
 
         <div class="os arch-os">
             <h3>Arch-OS</h3>
-            <a href="#" class="icon"></a>
+            <a href="http://arch-os.<?php echo str_replace('http://', '', site_url())?>" class="icon"></a>
         </div>
 
         <div class="os bio-os">
             <h3>Bio-OS</h3>
-            <a href="#" class="icon"></a>
+            <a href="http://bio-os.<?php echo str_replace('http://', '', site_url())?>" class="icon"></a>
         </div>
 
         <div class="os dome-os">
             <h3>Dome-OS</h3>
-            <a href="#" class="icon"></a>
+            <a href="http://dome-os.<?php echo str_replace('http://', '', site_url())?>" class="icon"></a>
         </div>
 
         <div class="os s-os">
             <h3>S-OS</h3>
-            <a href="#" class="icon"></a>
+            <a href="http://s-os.<?php echo str_replace('http://', '', site_url())?>" class="icon"></a>
         </div>
     </section>
 </main>
