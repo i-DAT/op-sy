@@ -47,10 +47,9 @@
 //         background: #F1F1F1
 
 // TODO: Set real background images here
-header.eco-os
-    background: #F1F1F1
-    
-header.arch-os
-header.bio-os
-header.dome-os
-header.s-os
+
+$os-list: eco arch bio dome s
+@each $os in $os-list
+    header.#{$os}-os
+        h1
+            @include retinafy("os_#{$os}", "png", 125px, 125px)
