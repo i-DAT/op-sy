@@ -64,6 +64,15 @@ a
     &:active
         color: $highlight
 
+p a
+    color: $highlight
+    &:visited
+        color: $highlight
+    &:hover
+        color: darken($highlight, 5%)
+    &:active
+        color: darken($highlight, 5%)
+
 blockquote
     position: relative
     margin: 1.5em 0
@@ -123,6 +132,8 @@ main
 @import "parts/downloads"
 
 @import "parts/projects"
+
+@import "parts/information"
 
 @import "parts/contact"
 

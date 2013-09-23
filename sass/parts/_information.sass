@@ -1,0 +1,43 @@
+.information
+    @include span-columns(12 omega, 12)
+
+    .about
+        padding: 0 // TODO: Make this... not neccessary?
+        @include font-size(18)
+        @include span-columns(12 omega, 12)
+
+    .partners, .team, .support
+        margin: 45px 0 0 0
+
+        p
+            margin: 0 0 5px 0
+            @include font-size(16)
+
+        h3
+            @include font-size(18)
+
+        ul
+            margin: 0
+            padding: 0
+
+            li
+                margin: 0 0 20px 0
+                list-style-type: none
+
+    .partners, .team
+        @include span-columns(6, 12)
+
+        .name
+            font-weight: 800
+
+        .title
+            margin: 0
+
+        a
+            color: $highlight
+
+    .team
+        @include span-columns(6 omega, 12)
+
+    .support
+        @include span-columns(12 omega, 12)
