@@ -11,6 +11,9 @@
 
         header
             @include span-columns(3, 12)
+            @include breakpoint(baby-bear)
+                margin: 0 0 15px
+                @include span-columns(12 omega, 12)
 
             h3, h4
                 margin: 0
@@ -24,6 +27,9 @@
 
         .address
             @include span-columns(3, 12)
+            @include breakpoint(baby-bear)
+                margin: 0 0 30px
+                @include span-columns(12 omega, 12)
 
             p 
                 margin: 0
@@ -33,6 +39,10 @@
         .methods
             @include span-columns(4, 12)
             @include post(2)
+            @include breakpoint(baby-bear)
+                margin: 0 0 30px
+                @include span-columns(12 omega, 12)
+                @include post(0)
 
             p 
                 margin: 0
