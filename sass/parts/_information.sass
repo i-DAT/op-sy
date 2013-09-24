@@ -25,10 +25,9 @@
                 list-style-type: none
 
     .partners, .team
-        @include span-columns(6, 12)
 
         .name
-            font-weight: 800
+            font-weight: 700
 
         .title
             margin: 0
@@ -36,7 +35,18 @@
         a
             color: $highlight
 
+        li
+            position: relative
+            &:before
+                content: "•"
+                position: absolute
+                top: 2px
+                left: -15px
+
     .team
+        @include span-columns(6, 12)
+
+    .partners
         @include span-columns(6 omega, 12)
 
     .support
