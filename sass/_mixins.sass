@@ -54,3 +54,12 @@
     @else
         $properties: all 0.15s ease-out 0
         @include prefixer(transition, $properties, webkit moz ms o spec)
+
+// Media Queries
+@mixin breakpoint($point)
+    @if $point == mama-bear
+        @media (max-width: 1050px)
+            @content
+    @else if $point == baby-bear
+        @media (max-width: 720px)
+            @content

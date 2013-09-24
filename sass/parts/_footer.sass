@@ -8,9 +8,13 @@
         .legal
             @include span-columns(4, 12)
             @include post(6)
+            @include breakpoint(baby-bear)
+                @include span-columns(12 omega, 12)
 
         .brand
             @include span-columns(2 omega, 12)
+            @include breakpoint(baby-bear)
+                @include span-columns(12 omega, 12)
 
             .logo
                 display: inline-block
@@ -20,6 +24,9 @@
                 float: right
                 @include retinafy("idat_logo", "png", 75px, 36px)
                 @include transition(all .125s ease-in-out)
+                @include breakpoint(baby-bear)
+                    float: none
+
                 &:hover
                     opacity: .8
                     @include transition(all .125s ease-in-out)

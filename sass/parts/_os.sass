@@ -9,6 +9,11 @@
         position: relative
         display: inline-block
         margin: 0 44px
+        @include breakpoint(baby-bear)
+            display: block
+            margin: 0
+            text-align: center
+
         &:first-of-type
             margin-left: 0
         &:last-of-type
@@ -28,6 +33,10 @@
             color: white
             background: $black
             border-radius: 2px
+            @include breakpoint(baby-bear)
+                visibility: visible
+                margin: 20px auto 10px auto
+
             &:after
                 position: absolute
                 content: ""
