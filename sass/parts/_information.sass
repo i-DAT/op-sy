@@ -45,9 +45,13 @@
 
     .team
         @include span-columns(6, 12)
+        @include breakpoint(baby-bear)
+            @include span-columns(12 omega, 12)
 
     .partners
         @include span-columns(6 omega, 12)
+        @include breakpoint(baby-bear)
+            @include span-columns(12 omega, 12)
 
     .support
         @include span-columns(12 omega, 12)

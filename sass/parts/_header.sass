@@ -22,16 +22,28 @@
 .site-nav
     @include font-size(16)
 
-    ul li
-        display: inline-block
-        margin: 0 20px 0 0
-        padding: 0 0 2px 0
-        &:last-of-type
-            margin: 0
+    ul 
+        padding: 0
+
+        li
+            display: inline-block
+            margin: 0 20px 0 0
+            padding: 0 0 2px 0
+            @include breakpoint(baby-bear)
+                display: list-item
+                margin: 0 0 10px 0
+                text-align: center
+                width: auto
+                border-bottom: none
+
+            &:last-of-type
+                margin: 0
 
 // Highlight current page in nav
 .current_page_item
     border-bottom: 2px solid $highlight
+    @include breakpoint(baby-bear)
+        text-decoration: underline
 
 // Single page header
 .page-header

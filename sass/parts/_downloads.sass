@@ -26,6 +26,7 @@
     @include transition(all .25s ease-in-out)
     @include span-columns(6, 12)
     @include breakpoint(baby-bear)
+        padding: 20px
         @include span-columns(12 omega, 12)
 
     &:nth-of-type(2n+2)
@@ -40,6 +41,8 @@
     // Add an octocat to GitHub links
     &.github
         @include retinafy("octocat", "png", 114px, 100px)
+        @include breakpoint(baby-bear)
+            background: none
 
     .title, .author
         margin: 0
