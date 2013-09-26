@@ -1,8 +1,8 @@
 <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
-        <section class="legal">
+<!--         <section class="legal">
             <p>&copy; <?php echo date("Y"); ?> i-DAT. All rights reserved.</p>
-        </section>
+        </section> -->
 
         <section class="brand">
             <a class="logo" href="http://i-dat.org">
