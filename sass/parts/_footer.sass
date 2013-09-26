@@ -5,11 +5,27 @@
         padding: 45px 0
         @include container
 
-        .legal
+        // .legal
+        //     @include span-columns(4, 12)
+        //     @include post(6)
+        //     @include breakpoint(baby-bear)
+        //         @include span-columns(12 omega, 12)
+
+        .opsy
             @include span-columns(4, 12)
             @include post(6)
             @include breakpoint(baby-bear)
-                @include span-columns(12 omega, 12)
+                margin: 0 0 15px 0
+                @include span-columns(12 oemga, 12)
+
+            .logo
+                display: inline-block
+                padding-left: 50px
+                height: 36px
+                background-repeat: no-repeat
+                line-height: 35px
+                font-weight: 800
+                @include retinafy("opsy_logo_small", "png", 36px, 36px)
 
         .brand
             @include span-columns(2 omega, 12)
