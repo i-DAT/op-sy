@@ -1,5 +1,15 @@
 .projects-list
     @extend %article-list
 
-    .project
-        @extend %article
+.project
+    @extend %article
+
+    .project-header
+
+        a
+            margin: 0 0 0 10px
+            font-weight: normal
+            color: $highlight
+
+    .description
+        @include font-size(18)

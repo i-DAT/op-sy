@@ -6,32 +6,25 @@
     </header>
     
     <section class="projects-list">
-         <div class="project">
-            <header class="project-header">
-                <h3><a href="#">Arch-OS</a></h3>
-                <img src="http://placekitten.com/1050/400"/>
-            </header>
 
-            <div class="description">
-                <p>Arch-OS represents an evolution in intelligent architecture, interactive art and ubiquitous computing. An ‘Operating System’ for contemporary architecture (Arch-OS, ’software for buildings’) has been developed to manifest the life of a building and provide artists, engineers and scientists with a unique environment for developing transdisciplinary work and new public art.</p>
-                <p>The Arch-OS experience combines a rich mix of the physical and virtual by incorporating the technology of ’smart’ buildings into new dynamic virtual architectures.</p>
-                <a href="#">View project</a>
+        <?php /* Get individual child sub-pages */ ?>
+        <?php $children = get_pages(['child_of' => $post->ID]); ?>
+        <?php foreach($children as $child): ?>
+            <?php $content = $child->post_content; ?>
+            <?php $content = apply_filters('the_content', $content); ?>
+            <?php $feat_img = wp_get_attachment_url( get_post_thumbnail_id($child->ID) ); ?>
+
+            <div class="project">
+                <header class="project-header">
+                    <h2><?php echo $child->post_title; ?><a href="<?php echo get_page_link($child->ID); ?>">View project</a></h2>
+                </header>
+
+                <img src="<?php echo $feat_img ?>" />
             </div>
-        </div>
+        <?php endforeach; ?>
 
-         <div class="project">
-            <header class="project-header">
-                <h3><a href="#">Arch-OS</a></h3>
-                <img src="http://placekitten.com/1050/400"/>
-            </header>
-
-            <div class="description">
-                <p>Arch-OS represents an evolution in intelligent architecture, interactive art and ubiquitous computing. An ‘Operating System’ for contemporary architecture (Arch-OS, ’software for buildings’) has been developed to manifest the life of a building and provide artists, engineers and scientists with a unique environment for developing transdisciplinary work and new public art.</p>
-                <p>The Arch-OS experience combines a rich mix of the physical and virtual by incorporating the technology of ’smart’ buildings into new dynamic virtual architectures.</p>
-                <a href="#">View project</a>
-            </div>
-        </div>
     </section>
+
 </main>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
