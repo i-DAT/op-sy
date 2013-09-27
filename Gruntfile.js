@@ -71,7 +71,7 @@ module.exports = function (grunt) {
         },
         modernizr: {
             devFile: 'components/modernizr/modernizr.js',
-            outputFile: 'js/vendors/modernizr.min.js',
+            outputFile: 'js/vendor/modernizr.min.js',
             extra: {
                 load: false
             },
