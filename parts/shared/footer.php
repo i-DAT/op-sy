@@ -1,10 +1,7 @@
 <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
-<!--         <section class="legal">
-            <p>&copy; <?php echo date("Y"); ?> i-DAT. All rights reserved.</p>
-        </section> -->
 
-        <?php if (!is_main_site()): ?>
+        <?php if ($_SERVER["SERVER_NAME"] != "op-sy.dev" && $_SERVER["SERVER_NAME"] != "op-sy.com" && $_SERVER["SERVER_NAME"] != "op-sy.beta.i-dat.org"): ?>
             <section class="opsy">
                 <a class="logo" href="<?php echo network_home_url(); ?>">
                     An OP-SY project
