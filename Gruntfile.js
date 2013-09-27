@@ -34,6 +34,38 @@ module.exports = function (grunt) {
                 src: 'js/main.min.js'
             }
         },
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'dist/img/'
+                }]
+            }
+        },
+        clean: {
+            dist: {
+                src: ['dist/']
+            }
+        },
+        copy: {
+            dist: {
+                files: [{
+                    expand: true,
+                    src: ['css/*', '**/*.php', 'js/vendor/*', '!components/**/*'],
+                    dest: 'dist/'
+                }]
+            }
+        },
+        shell: {
+            zip: {
+                options: {
+                    stdout: true
+                },
+                command: 'zip -r op-sy-v<%= pkg.version %>.zip dist/'
+            }
+        },
         modernizr: {
             devFile: 'components/modernizr/modernizr.js',
             outputFile: 'js/vendors/modernizr.min.js',
@@ -51,9 +83,22 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-modernizr');
+    grunt.loadNpmTasks('grunt-shell');
 
-    grunt.registerTask('build', ['compass', 'jshint', 'requirejs', 'strip', 'modernizr']);
+    grunt.registerTask('build', ['compass',
+                                 'jshint',
+                                 'requirejs',
+                                 'strip',
+                                 'modernizr',
+                                 'clean',
+                                 'copy',
+                                 'imagemin',
+                                 'shell'
+                                ]);
 
 };

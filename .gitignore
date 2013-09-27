@@ -4,6 +4,10 @@
 *~.nib
 ._*
 
+# Builds
+dist/
+*.zip
+
 # NPM and Bower dependencies
 node_modules/
 components/
