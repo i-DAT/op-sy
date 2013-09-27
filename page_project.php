@@ -11,7 +11,7 @@ Template Name: Project Page
     <section class="project">
         <header class="page-header">
             <h2><?php the_title(); ?></h2>
-            <?php $feat_img = wp_get_attachment_url( get_post_thumbnail_id($child->ID) ); ?>
+            <?php $feat_img = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
             <img src="<?php echo $feat_img; ?>" />
         </header>
 

@@ -35,7 +35,7 @@
   },
   "settings": {
     "database": {
-      "name": "wordpress",
+      "name": "wp_op-sy",
       "user": "root"
     }
   }
