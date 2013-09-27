@@ -32,11 +32,5 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-imagemin": "~0.3.0",
     "grunt-contrib-clean": "~0.5.0"
-  },
-  "settings": {
-    "database": {
-      "name": "wp_op-sy",
-      "user": "root"
-    }
   }
 }

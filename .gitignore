@@ -4,6 +4,9 @@
 *~.nib
 ._*
 
+# Config
+config.json
+
 # Builds
 dist/
 *.zip

@@ -3,6 +3,7 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        config: grunt.file.readJSON('config.json'),
         jshint: {
             files: ['js/*.js', '!js/*.min.js']
         },
@@ -72,13 +73,13 @@ module.exports = function (grunt) {
                 options: {
                     stdout: true
                 },
-                command: 'mysql -p -u <%= pkg.settings.database.user %> <%= pkg.settings.database.name %> < database/wordpress.sql'
+                command: '/Applications/MAMP/Library/bin/mysql -p -u <%= config.database.user %> <%= config.database.name %> < database/wordpress.sql'
             },
             exportDatabase: {
                 options: {
                     stdout: true
                 },
-                command: '/Applications/MAMP/Library/bin/mysqldump -p -u <%= pkg.settings.database.user %> <%= pkg.settings.database.name %> --ignore-table=<%= pkg.settings.database.name %>.wp_users > database/wordpress.sql'
+                command: '/Applications/MAMP/Library/bin/mysqldump -p -u <%= config.database.user %> <%= config.database.name %> --ignore-table=<%= config.database.name %>.wp_users > database/wordpress.sql'
             }
         },
         modernizr: {
@@ -116,7 +117,7 @@ module.exports = function (grunt) {
                                  'clean',
                                  'copy',
                                  'imagemin',
-                                 'shell',
+                                 'shell:zip',
                                  'clean'
                                 ]);
 
