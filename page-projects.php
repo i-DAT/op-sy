@@ -8,7 +8,7 @@
     <section class="projects-list">
 
         <?php /* Get individual child sub-pages */ ?>
-        <?php $children = get_pages(['child_of' => $post->ID]); ?>
+        <?php $children = get_pages(array('child_of' => $post->ID)); ?>
         <?php foreach($children as $child): ?>
             <?php $content = $child->post_content; ?>
             <?php $content = apply_filters('the_content', $content); ?>

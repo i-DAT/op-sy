@@ -5,7 +5,11 @@
         <h2><?php the_title(); ?></h2>
     </header>
     
-    Custom <?php the_title(); ?> template here, yo!
+    <section class="feeds">
+        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+        <?php endwhile; ?>
+    </section>
 </main>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

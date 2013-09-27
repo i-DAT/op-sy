@@ -5,7 +5,7 @@
         </a>
         <nav class="site-nav" role="navigation">
             <ul>
-                <?php wp_list_pages(['title_li' => '', 'depth' => 1]); ?>
+                <?php wp_list_pages(array('title_li' => '', 'depth' => 1)); ?>
             </ul>
         </nav>
     </div>

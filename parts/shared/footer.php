@@ -4,11 +4,13 @@
             <p>&copy; <?php echo date("Y"); ?> i-DAT. All rights reserved.</p>
         </section> -->
 
-        <section class="opsy">
-            <a class="logo" href="<?php echo network_home_url(); ?>">
-                An OP-SY project
-            </a>
-        </section>
+        <?php if (!is_main_site()): ?>
+            <section class="opsy">
+                <a class="logo" href="<?php echo network_home_url(); ?>">
+                    An OP-SY project
+                </a>
+            </section>
+        <?php endif; ?>
 
         <section class="brand">
             <a class="logo" href="http://i-dat.org">
