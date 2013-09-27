@@ -67,6 +67,18 @@ module.exports = function (grunt) {
                     }
                 },
                 command: 'zip -r ../op-sy-v<%= pkg.version %>.zip ./'
+            },
+            importDatabase: {
+                options: {
+                    stdout: true
+                },
+                command: 'mysql -p -u <%= pkg.settings.database.user %> <%= pkg.settings.database.name %> < database/wordpress.sql'
+            },
+            exportDatabase: {
+                options: {
+                    stdout: true
+                },
+                command: '/Applications/MAMP/Library/bin/mysqldump -p -u <%= pkg.settings.database.user %> <%= pkg.settings.database.name %> --ignore-table=<%= pkg.settings.database.name %>.wp_users > database/wordpress.sql'
             }
         },
         modernizr: {
@@ -92,6 +104,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-modernizr');
     grunt.loadNpmTasks('grunt-shell');
+
+    grunt.registerTask('importDatabase', ['shell:importDatabase']);
+    grunt.registerTask('exportDatabase', ['shell:exportDatabase']);
 
     grunt.registerTask('build', ['compass',
                                  'jshint',

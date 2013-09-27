@@ -4,9 +4,6 @@
 *~.nib
 ._*
 
-# MYSQL Database
-database/
-
 # Builds
 dist/
 *.zip
