@@ -20,6 +20,18 @@ Either via [GitHub](https://github.com/WordPress/WordPress) (remember to checkou
 1. `cd op-sy`
 2. `npm install`
 
+### Create a config.json file
+
+1. Create a config.json file in the root of the theme
+2. Add database configuration like so:-
+
+`{
+  "database": {
+    "name": "wordpress",
+    "user": "root"
+  }
+}`
+
 ### Grunt Commands
 
 #### `grunt watch` (default)
@@ -34,6 +46,10 @@ The default grunt command is watch - it compiles SASS files on change.
 4. Strips console logs from built JavaScript file.
 5. Scans JavaScript and CSS files for [Modernizr](http://modernizr.com/) methods and classes and generates a custom Modernizr file accordingly.
 
+### `grunt exportDatabase`
+
+### `grunt importDatabase`
+
 ## Core Dependencies
 
 - [Node.js](http://nodejs.org)
@@ -44,3 +60,4 @@ The default grunt command is watch - it compiles SASS files on change.
 ## Authors
 
 - [Saul](http://github.com/saulhardman)
+- [Ben](http://github.com/benashman)
