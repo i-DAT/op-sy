@@ -35,8 +35,6 @@ $highlight: rgb(255, 108, 0)
  */
 
 *
-    text-rendering: optimizeLegibility
-    -webkit-font-smoothing: antialiased
     @include box-sizing(border-box)
 
 html
@@ -47,6 +45,8 @@ button,
 input,
 select,
 textarea
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
     font-family: "Source Sans Pro", helvetica, arial, verdana, sans-serif
     @include font-size(13)
     color: $black
