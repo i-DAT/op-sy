@@ -53,7 +53,7 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    src: ['css/*', '*.css', '**/*.php', 'js/vendor/*', '!components/**/*'],
+                    src: ['style.css', 'screenshot.png', 'css/*', '*.php', 'external/**/*.php', 'parts/**/*.php', 'js/**/*.min.js'],
                     dest: 'dist/'
                 }]
             }
