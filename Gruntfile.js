@@ -61,9 +61,12 @@ module.exports = function (grunt) {
         shell: {
             zip: {
                 options: {
-                    stdout: true
+                    stdout: true,
+                    execOptions: {
+                        cwd: 'dist/'
+                    }
                 },
-                command: 'zip -r op-sy-v<%= pkg.version %>.zip dist/'
+                command: 'zip -r ../op-sy-v<%= pkg.version %>.zip ./'
             }
         },
         modernizr: {
@@ -98,7 +101,8 @@ module.exports = function (grunt) {
                                  'clean',
                                  'copy',
                                  'imagemin',
-                                 'shell'
+                                 'shell',
+                                 'clean'
                                 ]);
 
 };
