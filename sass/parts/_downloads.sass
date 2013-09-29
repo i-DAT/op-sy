@@ -23,6 +23,7 @@
     border-radius: 4px
     background-repeat: no-repeat
     background-position: 20px center
+    @include retinafy("download", "png", 110px, 100px)
     @include transition(all .25s ease-in-out)
     @include span-columns(6, 12)
     @include breakpoint(baby-bear)
