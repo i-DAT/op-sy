@@ -25,12 +25,14 @@ Either via [GitHub](https://github.com/WordPress/WordPress) (remember to checkou
 1. Create a config.json file in the root of the theme
 2. Add database configuration like so:-
 
-`{
+```js
+{
   "database": {
     "name": "wordpress",
     "user": "root"
   }
-}`
+}
+```
 
 ### Grunt Commands
 
@@ -41,21 +43,30 @@ The default grunt command is watch - it compiles SASS files on change.
 #### `grunt build`
 
 1. Compiles SASS.
-2. Lints JavaScript files using [JSHint](http://www.jshint.com/).
-3. Runs [RequireJS optimizer](http://requirejs.org/docs/optimization.html) including [almond](https://github.com/jrburke/almond) in the output.
-4. Strips console logs from built JavaScript file.
-5. Scans JavaScript and CSS files for [Modernizr](http://modernizr.com/) methods and classes and generates a custom Modernizr file accordingly.
+2. Lints JavaScript files using [JSHint](http://www.jshint.com/)
+3. Runs [RequireJS optimizer](http://requirejs.org/docs/optimization.html) including [almond](https://github.com/jrburke/almond) in the output
+4. Strips console logs from built JavaScript file
+5. Scans JavaScript and CSS files for [Modernizr](http://modernizr.com/) methods and classes and generates a custom Modernizr file accordingly
+6. Compresses the theme files (as well as minifiying images) into a package name and version labelled .zip file
 
-### `grunt exportDatabase`
+#### `grunt exportDatabase` (requires [MAMP](http://www.mamp.info/en/index.html))
 
-### `grunt importDatabase`
+1. Edit the [config.json](#create-a-config-json-file) file to reflect your local MySQL database setup.
+2. Run `grunt exportDatabase` to mysqldump contents of WordPress database (minus wp_users) into `database/wordpress.sql`.
+
+#### `grunt importDatabase` (requires [MAMP](http://www.mamp.info/en/index.html))
+
+***WARNING:*** KNOW WHAT THIS IS GOING TO DO BEFORE RUNNING IT!
+
+1. Edit the [config.json](#create-a-config-json-file) file to reflect your local MySQL database setup.
+2. Run `grunt importDatabase` to import contents of `database/wordpress.sql` into your WordPress database.
 
 ## Core Dependencies
 
 - [Node.js](http://nodejs.org)
-- [Yo](http://yeoman.io)
+-- [Yo](http://yeoman.io)
 - [Ruby](https://www.ruby-lang.org/en/)
-- [Compass](http://compass-style.org)
+-- [Compass](http://compass-style.org)
 
 ## Authors
 

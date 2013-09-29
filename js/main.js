@@ -1,14 +1,20 @@
 requirejs.config({
     paths: {
-        jquery: '../components/jquery/jquery'
+        jquery: '../components/jquery/jquery',
+        ga: 'vendor/ga'
+    },
+    shim: {
+        ga: {
+            exports: '_gaq'
+        }
     }
 });
 
-requirejs(['jquery', 'modules/example'], function ($, example) {
+requirejs(['jquery', 'modules/analytics'], function ($, analytics) {
 
     var app = {
         Modules: {
-            example: example
+            analytics: analytics
         },
         // Implement the mediator pattern using an empty jQuery object 
         Events: $({}),

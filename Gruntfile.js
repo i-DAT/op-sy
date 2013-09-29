@@ -59,16 +59,17 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        shell: {
-            zip: {
+        compress: {
+            dist: {
                 options: {
-                    stdout: true,
-                    execOptions: {
-                        cwd: 'dist/'
-                    }
+                    archive: '<%= pkg.name %>-v<%= pkg.version %>.zip'
                 },
-                command: 'zip -r ../op-sy-v<%= pkg.version %>.zip ./'
-            },
+                expand: true,
+                cwd: 'dist/',
+                src: ['**/*']
+            }
+        },
+        shell: {
             importDatabase: {
                 options: {
                     stdout: true
@@ -99,9 +100,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-modernizr');
     grunt.loadNpmTasks('grunt-shell');
@@ -117,7 +119,7 @@ module.exports = function (grunt) {
                                  'clean',
                                  'copy',
                                  'imagemin',
-                                 'shell:zip',
+                                 'compress',
                                  'clean'
                                 ]);
 
