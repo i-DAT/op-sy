@@ -76,7 +76,7 @@ The default grunt command is watch - it compiles SASS files on change.
 ## TODO
 
 - ~~OP-SY: Rename 'Home' to 'OP-SY'~~
-- 'An OP-SY Project' footer link directs to beta.i-dat.org as Network Home. Might need to hard code this.
+- ~~'An OP-SY Project' footer link directs to beta.i-dat.org as Network Home~~
 - ~~'Systems' to become 'System' on all OS sub-sites~~
 - ~~Remove 'feeds' page from all except Eco-OS & OP-SY~~
 - Upload map image to contact page. @2x?
