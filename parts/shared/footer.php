@@ -3,7 +3,7 @@
 
         <?php if ($_SERVER["SERVER_NAME"] != "op-sy.dev" && $_SERVER["SERVER_NAME"] != "op-sy.com" && $_SERVER["SERVER_NAME"] != "op-sy.beta.i-dat.org"): ?>
             <section class="opsy">
-                <a class="logo" href="<?php echo network_home_url(); ?>">
+                <a class="logo" href="http://op-sy.com">
                     An OP-SY project
                 </a>
             </section>
