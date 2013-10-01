@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: OS Home Page
+*/
+?>
+
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 
 <main id="main" class="main" role="main">
