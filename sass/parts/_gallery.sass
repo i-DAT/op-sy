@@ -1,0 +1,14 @@
+.gallery
+
+    a
+        display: inline-block
+        height: 125px
+        width: 125px
+        margin: 30px 88px 0 0 
+        @include breakpoint(baby-bear)
+            display: block
+            margin: 0
+            text-align: center
+
+        &:nth-of-type(5n+5)
+            margin: 0
