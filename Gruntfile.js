@@ -21,10 +21,24 @@ module.exports = function (grunt) {
         compass: {
             compile: {}
         },
+        concat: {
+            main: {
+                files: {
+                    'css/main.css': ['css/main.css', 'components/magnific-popup/dist/magnific-popup.css']
+                }
+            }
+        },
+        cssmin: {
+            main: {
+                files: {
+                    'css/main.css': 'css/main.css'
+                }
+            }
+        },
         watch: {
             compass: {
                 files: 'sass/**/*.{sass,scss}',
-                tasks: ['compass']
+                tasks: ['compass', 'concat', 'cssmin']
             }
         },
         strip: {
@@ -100,6 +114,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
