@@ -94,3 +94,8 @@
 			</article>
 		<?php endif;
 	}
+
+	// Stops Wordpress doing stupid shit to content formatting
+
+	// remove_filter( 'the_content', 'wpautop' );
+	// remove_filter( 'the_excerpt', 'wpautop' );

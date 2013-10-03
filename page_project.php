@@ -15,14 +15,6 @@ Template Name: Project Page
             <img src="<?php echo $feat_img; ?>" />
         </header>
 
-        <div class="gallery">
-            <a href="http://placekitten.com/230/120"><img src="http://placekitten.com/125/125" /></a>
-            <a href="http://placekitten.com/400/110"><img src="http://placekitten.com/125/125" /></a>
-            <a href="http://placekitten.com/500/500"><img src="http://placekitten.com/125/125" /></a>
-            <a href="http://placekitten.com/400/110"><img src="http://placekitten.com/125/125" /></a>
-            <a href="http://placekitten.com/500/500"><img src="http://placekitten.com/125/125" /></a>
-        </div>
-
         <div class="description">
             <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
