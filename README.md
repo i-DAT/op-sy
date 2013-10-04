@@ -64,9 +64,9 @@ The default grunt command is watch - it compiles SASS files on change.
 ## Core Dependencies
 
 - [Node.js](http://nodejs.org)
-  -- [Yo](http://yeoman.io)
+  - [Yo](http://yeoman.io)
 - [Ruby](https://www.ruby-lang.org/en/)
-  -- [Compass](http://compass-style.org)
+  - [Compass](http://compass-style.org)
 
 ## Authors
 
